@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>NBA</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/NBA.css" />
+		<script src="js/zepto.min.js"></script>
+		<script src="js/swiper.jquery.js"></script>
+		<script>	
+	        function resize(originSize,type){
+		        	var type=type||"x";
+		        	var widths=document.documentElement.clientWidth;
+		        	var heights=document.documentElement.clientHeight;
+		        	if(type=="x"){
+		        	    var scale=widths/originSize*100+"px";
+		        	}else{
+		        		var scale=heights/originSize*100+"px";
+		        	}
+		        	document.getElementsByTagName("html")[0].style.fontSize=scale;
+		    }
+		    window.onload=function(){
+		        resize(822);
+	        }
+        </script>   
+	</head>
+	<body>
+	<header>
+		<div class="titleone">
+			<a href="index.html" class="back"><</a>
+			<a href="" class="nba">NBA</a>	
+		</div>
+		<div class="titletwo">
+			<a href="">动态</a>
+			<a href="">数据</a>
+			<a href="">赛程</a>
+			<a href="">资料</a>
+		</div>
+	</header>	
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+	        <div class="swiper-slide one">
+	        	<div class="sd">速递</div>
+	        	<a href="news.html">
+		        	<div class="conn">
+		        		<div class="con">
+		        			<img src="img/p1.jpg" alt="" />
+		        			<p>4日NBA综述:勇士大胜太湖 湖人惜败灰熊</p>
+		        		</div>
+		        	</div>
+		        </a>	
+	        	<a href="news.html">
+		        	<div class="conn">
+		        		<div class="con">
+		        			<img src="img/p1.jpg" alt="" />
+		        			<p>4日NBA综述:勇士大胜太湖 湖人惜败灰熊</p>
+		        		</div>
+		        	</div>
+		        </a>	
+	        	<a href="news.html">
+		        	<div class="conn">
+		        		<div class="con">
+		        			<img src="img/p1.jpg" alt="" />
+		        			<p>4日NBA综述:勇士大胜太湖 湖人惜败灰熊</p>
+		        		</div>
+		        	</div>
+		        </a>	
+	        	<a href="news.html">
+		        	<div class="conn">
+		        		<div class="con">
+		        			<img src="img/p1.jpg" alt="" />
+		        			<p>4日NBA综述:勇士大胜太湖 湖人惜败灰熊</p>
+		        		</div>
+		        	</div>
+		        </a>	
+	        	<a href="news.html">
+		        	<div class="conn">
+		        		<div class="con">
+		        			<img src="img/p1.jpg" alt="" />
+		        			<p>4日NBA综述:勇士大胜太湖 湖人惜败灰熊</p>
+		        		</div>
+		        	</div>
+		        </a>	
+	        	<a href="news.html">
+		        	<div class="conn">
+		        		<div class="con">
+		        			<img src="img/p1.jpg" alt="" />
+		        			<p>4日NBA综述:勇士大胜太湖 湖人惜败灰熊</p>
+		        		</div>
+		        	</div>
+		        </a>	
+	        </div>
+	        <div class="swiper-slide two">
+	        	<img src="img/sj.jpg" alt="" />
+	        </div>
+	        <div class="swiper-slide three">
+	        	<img src="img/sc.jpg" alt="" />
+	        </div>
+	        <div class="swiper-slide four">
+	        	<img src="img/zl.jpg" alt="" />
+	        </div>
+	    </div>    
+        <div class="swiper-pagination lunbo"></div>
+    </div>    
+	</body>
+	<script>
+    var swiper = new Swiper('.swiper-container',{
+        pagination : '.swiper-pagination',  /*分页器*/
+    })
+</script>
+</html>

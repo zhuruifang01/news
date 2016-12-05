@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+		<title></title>
+		<script>	
+	        function resize(originSize,type){
+		        	var type=type||"x";
+		        	var widths=document.documentElement.clientWidth;
+		        	var heights=document.documentElement.clientHeight;
+		        	if(type=="x"){
+		        	    var scale=widths/originSize*100+"px";
+		        	}else{
+		        		var scale=heights/originSize*100+"px";
+		        	}
+		        	document.getElementsByTagName("html")[0].style.fontSize=scale;
+		    }
+		    window.onload=function(){
+		        resize(822);
+	        }
+        </script>
+        <style>
+        	html,body{
+	   	   	padding:0;margin:0;
+	   	   	width:100%;height:100%;overflow:hidden;
+   	   	    }
+			*{box-sizing:border-box;}   	   	
+			a{text-decoration:none;}	
+			header{
+				width:100%;height:1.10rem;
+				background:#191919;
+				position:relative;
+			}
+			header .titleone{
+				width:100%;height:1.10rem;
+				color:#fff;
+				display:fixed;
+			}
+			header .titleone a{
+				color:#fff;
+				line-height:1.10rem;
+			}
+			.back{
+				padding-left:0.34rem;
+				font-size:0.6rem;
+				font-weight:bold;
+			}
+			.title{
+				width:7.44rem;
+				height:2.1rem;
+				overflow:hidden;
+				margin-left:0.3rem;
+				padding-top:0.2rem;
+				border-bottom:0.03rem solid #E6E6E6;
+				font-size:0.46rem;color:#000;
+				font-weight:bold;
+			}
+			.title span{
+				font-size:0.35rem;color:#AEAEAE;
+				font-weight:normal;overflow: hidden;
+			}
+			.img{
+				width:7.70rem;height:5.12rem;
+				margin:0 auto;
+			}
+			.img img{
+				width:100%;
+				height:100%;
+				padding-top:0.3rem;
+			}
+			p{
+				width:7.70rem;height:auto;
+				margin:0 auto;
+				font-size:0.38rem;
+			    color:#000;
+			    line-height:0.6rem;
+            }
+			p span{
+				 font-weight:bold;
+				 padding-top:0.3rem;
+			}
+        </style>
+	</head>
+	<body>
+	<header>
+		<div class="titleone">
+			<a href="NBA.html" class="back"><</a>
+		</div>
+	</header>
+	<div class="con">
+		<div class="title">
+		    4日NBA综述:勇士大胜太阳 湖人惜败灰熊
+		    <br />
+		    <span>
+		    	体育疯    3小时前
+		    </span>
+	    </div>
+	    <div class="img">
+		    <img src="img/p1.jpg" alt="" />
+	    </div>
+        <p>
+        	<br />
+			<span>太阳109-138勇士</span><br />
+			今天勇士主场迎接太阳,比赛开始后布莱索的中远投篮和助攻让太阳 反客为主取得领先,不过杜兰特和汤普森相继三分命中,很快就将比分追了回来,而到了节末库里
+			也连中两记三分球让勇士领先7分结束首节。而到了节末库里也连中两记三分球让勇士领先7分结束首节而到了节末库里也连中两记三分球让勇士领先7分结束首节。
+		</p>
+	</div>
+	</body>
+</html>
